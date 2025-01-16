@@ -1,10 +1,10 @@
 import dns.resolver
 
 res = dns.resolver.Resolver()
-arquivo = open("/home/kali/wordlist.txt", "r")
+arquivo = open("wordlist.txt", "r")
 subdominios = arquivo.read().splitlines()
 
-alvo = "globo.com.br"
+alvo = "bancocn.com"
 
 for subdominio in subdominios:
 	try:
